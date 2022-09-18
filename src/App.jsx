@@ -4,7 +4,7 @@ import Services from "./components/services/Services";
 import Work from "./components/work/Work";
 import Footer from "./components/footer/Footer";
 import { useEffect } from "react";
-import { storedTheme } from "../src/themes";
+import { storedTheme } from "./themes";
 
 export default function App() {
   useEffect(() => {
