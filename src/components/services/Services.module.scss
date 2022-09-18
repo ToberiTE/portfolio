@@ -1,0 +1,115 @@
+@import "../../utils";
+@import "../../mixins";
+
+.services {
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    overflow: hidden;
+  }
+
+  @include screen(large) {
+    height: calc(100vh - 4rem);
+  }
+
+  @include screen(medium) {
+    min-height: 100vh;
+    padding-bottom: unquote("min(16rem, 50vh)");
+  }
+
+  @include screen(small) {
+    min-height: 210vh;
+  }
+
+  .container {
+    transition: opacity 1500ms ease, visibility 1500ms ease,
+      transform 1000ms ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10vw;
+
+    @include screen(small, medium) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .textwrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 50%;
+      z-index: 2;
+
+      @include screen(small, medium) {
+        max-width: 100%;
+        padding: 10vw 5vw 10vw 0;
+      }
+
+      h2 {
+        min-width: 15ch;
+      }
+
+      p {
+        &:nth-child(2) {
+          max-width: 76ch;
+          padding-top: 1rem;
+          font-weight: $fw-700;
+        }
+
+        &:nth-child(3) {
+          max-width: 67ch;
+          padding-top: 1rem;
+
+          & > span {
+            font-style: italic;
+          }
+        }
+
+        &:nth-child(4) {
+          max-width: 70ch;
+          padding: 1rem 0;
+        }
+      }
+    }
+
+    .cardwrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      z-index: 1;
+      min-width: 50%;
+      margin-left: 4vw;
+
+      @include screen(small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 25%);
+      }
+
+      @include screen(small, large) {
+        height: 95vh;
+      }
+
+      @include screen(small, medium) {
+        margin-left: 0;
+        padding: 0 10vw 10vw 0;
+      }
+
+      @include screen(medium) {
+        height: unquote("min(95vh, 30rem)");
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 55%);
+      }
+
+      @include screen(large) {
+        min-width: 45%;
+        transform-origin: top;
+        transform: rotate(3deg);
+      }
+    }
+  }
+}

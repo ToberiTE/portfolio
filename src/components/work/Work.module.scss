@@ -1,0 +1,219 @@
+@import "../../utils";
+@import "../../mixins";
+
+.work {
+  position: relative;
+
+  @include screen(large) {
+    height: calc(100vh - 4rem);
+  }
+
+  @include screen(medium) {
+    min-height: 100vh;
+    padding-bottom: unquote("min(6rem, 50vh)");
+  }
+
+  @include screen(small) {
+    min-height: 122vh;
+  }
+
+  .container {
+    transition: opacity 1500ms ease, visibility 1500ms ease,
+      transform 1000ms ease;
+
+    .textwrapper {
+      padding: 0 0 0 10vw;
+
+      @include screen(large) {
+        transform: translateY(unquote("clamp(2rem, 6vw - 1rem, 10rem)"));
+      }
+
+      @include screen(small, medium) {
+        padding: 10vw 5vw 10vw 10vw;
+      }
+
+      p {
+        max-width: 70ch;
+
+        &:nth-child(2) {
+          padding: 1rem 0;
+        }
+
+        &:nth-child(3) {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    .cardwrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      place-items: center;
+      max-width: 80%;
+      margin-inline: 10vw;
+
+      @include screen(small, medium) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .card {
+        overflow: hidden;
+        box-shadow: 0 0 1.4rem hsla(0, 0%, 0%, 0.5);
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        z-index: 1;
+        background-color: var(--clr-accent-3);
+        padding: 2rem;
+        transition: transform 350ms ease, z-index 350ms 0ms ease;
+        backface-visibility: hidden;
+
+        &:hover,
+        &:focus-within {
+          transition: transform 350ms ease, z-index 0ms 0ms ease;
+          transform: scale(1.08);
+          z-index: 3;
+
+          .overlay {
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          .button {
+            backface-visibility: hidden;
+            z-index: 4;
+          }
+        }
+
+        @include screen(large) {
+          &:nth-child(1) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          &:nth-child(2) {
+            grid-column: 2;
+            grid-row: span 2;
+          }
+
+          &:nth-child(3) {
+            grid-column: 3;
+            grid-row: span 1;
+          }
+        }
+
+        @include screen(medium) {
+          max-width: 60%;
+        }
+
+        @include screen(small, medium) {
+          &:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+          }
+          &:nth-child(2) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+
+          &:nth-child(3) {
+            grid-column: 1;
+            grid-row: 3;
+          }
+        }
+
+        .overlay {
+          top: 0;
+          left: 0;
+          z-index: 1;
+          display: grid;
+          place-items: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          color: var(--clr-primary);
+          background-color: var(--clr-accent-2);
+          opacity: 0.9;
+          transition: opacity 350ms ease, visibility 350ms ease;
+
+          .text {
+            position: absolute;
+            color: var(--clr-primary);
+            padding-inline: 10%;
+            padding-block: 50%;
+          }
+        }
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          aspect-ratio: 16 / 9;
+        }
+
+        .button {
+          padding: 0.75rem 4rem 0.75rem 1.25rem;
+          font-size: 1rem;
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+          display: inline-flex;
+          text-decoration: none;
+          color: var(--clr-primary);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          outline: 0;
+          background: linear-gradient(
+              140deg,
+              var(--clr-accent-1) 40%,
+              var(--clr-accent-3)
+            )
+            center / cover no-repeat;
+
+          &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            opacity: 0;
+            transition: opacity 700ms ease;
+            background-color: var(--clr-accent-1);
+          }
+
+          &:hover,
+          &:focus-visible {
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+
+        i {
+          display: inline-block;
+          margin: auto;
+          text-decoration: none;
+          padding: 0;
+          margin-right: 1.25rem;
+          font-size: 1.5rem;
+          color: hsl(0, 0%, 20%);
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: $clr-primary;
+            background-color: $clr-primary;
+            border-radius: 100%;
+            transform: scale(0.9);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
