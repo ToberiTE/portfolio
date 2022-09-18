@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="32 80 100 90">
+  <g stroke-width=".529167">
+    <rect width="44.185417" height="26.722916" x="59.002083" y="102.92291" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" paint-order="markers stroke fill" rx="2"/>
+    <rect width="49.477089" height="3.0427127" x="56.356243" y="129.64583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" paint-order="stroke fill markers" rx="2.0000012" ry="2.0000012"/>
+    <rect width="25.400002" height="13.890625" x="64.955208" y="109.5375" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" paint-order="stroke fill markers" rx="0"/>
+    <text xml:space="preserve" x="71.250694" y="112.50352" fill="#fff" font-family="sans-serif" font-size="4.77797" font-weight="700" style="line-height:1.25;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal" transform="scale(.94823 1.0546)"><tspan x="71.250694" y="112.50352">&lt;/&gt;</tspan></text>
+    <path fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" d="M87.047913 111.26458h1.190625v.92604166h-1.190625zM84.76458 111.26458h1.190625v.92604166H84.76458z" paint-order="stroke fill markers"/>
+  </g>
+</svg>
