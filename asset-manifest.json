@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/ToberiTE/portfolio/static/css/main.50c30709.css",
-    "main.js": "/ToberiTE/portfolio/static/js/main.a115d445.js",
-    "static/media/driftservice.png": "/ToberiTE/portfolio/static/media/driftservice.521a02b7024374c23f68.png",
-    "static/media/portfolio.png": "/ToberiTE/portfolio/static/media/portfolio.8bd3b1ca81e22e4aaead.png",
-    "static/media/paint.png": "/ToberiTE/portfolio/static/media/paint.3805f0d8865a4e6b4270.png",
-    "static/media/dark-polygon.svg": "/ToberiTE/portfolio/static/media/dark-polygon.fec08f10d567fd0776b2.svg",
-    "static/media/light-polygon.svg": "/ToberiTE/portfolio/static/media/light-polygon.19e4126ecaa4f2b1034b.svg",
-    "index.html": "/ToberiTE/portfolio/index.html",
-    "static/media/webdev.svg": "/ToberiTE/portfolio/static/media/webdev.0b9a6ac7f8b81f2a5fa3101229f0769f.svg",
-    "static/media/hosting.svg": "/ToberiTE/portfolio/static/media/hosting.4ec56a815e17f6ddd74bdbea17c297ed.svg",
-    "static/media/swdev.svg": "/ToberiTE/portfolio/static/media/swdev.e3c2fd1de2845848a92fc1d9fc200d19.svg",
-    "static/media/design.svg": "/ToberiTE/portfolio/static/media/design.6886deada05f3d81f5a7bbf72c39607e.svg",
-    "static/media/doc.svg": "/ToberiTE/portfolio/static/media/doc.b3cbd13a8ebbe2596ef72337205230e7.svg",
-    "static/media/appdev.svg": "/ToberiTE/portfolio/static/media/appdev.6888416649aa5078866afe57d4b255af.svg",
-    "main.50c30709.css.map": "/ToberiTE/portfolio/static/css/main.50c30709.css.map",
-    "main.a115d445.js.map": "/ToberiTE/portfolio/static/js/main.a115d445.js.map"
+    "main.css": "/portfolio/static/css/main.0b0c3609.css",
+    "main.js": "/portfolio/static/js/main.88cacaaa.js",
+    "static/media/driftservice.png": "/portfolio/static/media/driftservice.521a02b7024374c23f68.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.8bd3b1ca81e22e4aaead.png",
+    "static/media/paint.png": "/portfolio/static/media/paint.3805f0d8865a4e6b4270.png",
+    "static/media/dark-polygon.svg": "/portfolio/static/media/dark-polygon.fec08f10d567fd0776b2.svg",
+    "static/media/light-polygon.svg": "/portfolio/static/media/light-polygon.19e4126ecaa4f2b1034b.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/webdev.svg": "/portfolio/static/media/webdev.0b9a6ac7f8b81f2a5fa3101229f0769f.svg",
+    "static/media/hosting.svg": "/portfolio/static/media/hosting.4ec56a815e17f6ddd74bdbea17c297ed.svg",
+    "static/media/swdev.svg": "/portfolio/static/media/swdev.e3c2fd1de2845848a92fc1d9fc200d19.svg",
+    "static/media/design.svg": "/portfolio/static/media/design.6886deada05f3d81f5a7bbf72c39607e.svg",
+    "static/media/doc.svg": "/portfolio/static/media/doc.b3cbd13a8ebbe2596ef72337205230e7.svg",
+    "static/media/appdev.svg": "/portfolio/static/media/appdev.6888416649aa5078866afe57d4b255af.svg",
+    "main.0b0c3609.css.map": "/portfolio/static/css/main.0b0c3609.css.map",
+    "main.88cacaaa.js.map": "/portfolio/static/js/main.88cacaaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.50c30709.css",
-    "static/js/main.a115d445.js"
+    "static/css/main.0b0c3609.css",
+    "static/js/main.88cacaaa.js"
   ]
 }
