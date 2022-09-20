@@ -897,7 +897,7 @@
   "bugs": {
     "url": "https://github.com/ToberiTE/portfolio/issues"
   },
-  "homepage": "https://github.com/ToberiTE/portfolio",
+  "homepage": "https://toberite.github.io/portfolio",
   "browserslist": {
     "production": [
       ">0.2%",
